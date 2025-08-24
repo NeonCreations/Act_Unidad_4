@@ -1,0 +1,39 @@
+#presentacion{
+	text-align: center;
+	font-family: Impact;
+	font-size: 40px;
+}
+
+
+#buttons {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 30px;
+}
+
+#buttons button{
+	 padding: 20px 20px;
+  background-color:white;
+  color: black;
+  border-radius: 5px;
+  border-color: black;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+body{
+	background-color: white;
+}
+
+
+#resultado{
+	 margin-top: 20px; 
+	 font-family: Arial;
+	 font-size: 50px;
+	 font-weight: bold;
+	 align-items: center;
+	 height: 100vh;
+	 margin: 0;
+}

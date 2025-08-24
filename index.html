@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fondos de pantalla</title>
+	<link rel="stylesheet" href="estilos.css">	
+</head>
+
+<body>
+
+<div id="presentacion">
+
+<script>
+var nombre; 
+nombre = prompt('Dime tu nombre','');
+alert ("¡Saludos, " + nombre + "!");
+</script>
+
+
+<script>
+/*línea que permite escribir*/
+document.write('¡Bienvenido!');//escribo texto hola
+document.write('<br>'); //escribo una etiqueta html de salto de línea en el texto (retorno de carro).
+document.write('<br>');
+document.write('La funcion de este codigo es mostrarte los dias de la semana.');
+document.write('<br>');
+document.write('<br>');
+document.write('Para esto puedes dar click en el boton de abajo.');
+document.write('<br>');
+document.write('<br>');
+</script>
+</div>
+
+<div id="buttons">
+<button onclick="semana()">Días de la semana</button>
+</div>
+
+<div id="resultado"></div>
+
+<script>
+  function semana() {
+  var dias = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
+  var texto = "";
+
+  for (var i = 0; i < dias.length; i++) {
+    texto += "Día " + (i + 1) + ": " + dias[i] + "<br>";
+  }
+
+  document.getElementById("resultado").innerHTML = texto;
+}
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<!--
+<div id="buttons">
+<button onclick="cambiarFondo('#e74a4a')">Rojo</button>
+<button onclick="cambiarFondo('lightblue')">Azul</button>
+<button onclick="cambiarFondo('lightyellow')">Amarillo</button>
+</div>
+
+<script>
+  function cambiarFondo(color) {
+    document.body.style.backgroundColor = color;
+  }
+</script>
+
+</body>
+</html>
+
+
